@@ -1,0 +1,69 @@
+<%- include('partials/header') %>
+<!-- <div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+  src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v12.0&appId=386606559847826&autoLogAppEvents=1"
+  nonce="vSF732Nf"></script> -->
+<div class="container mt-5">
+  <h1>Register</h1>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+
+          <!-- Makes POST request to /register route -->
+          <form action="/register" method="POST">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" name="username">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" name="password">
+            </div>
+            <button type="submit" class="btn btn-dark">Register</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card social-block ">
+        <div class="card-body">
+          <a class="btn btn-block btn-primary" href="/auth/google" role="button">
+            <i class="fab fa-google"></i>
+            Sign Up with Google
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card social-block ">
+        <div class="card-body">
+          <a class="btn btn-block btn-primary" href="/auth/facebook" role="button">
+            <i class="fab fa-facebook"></i>
+            Sign Up with facebook
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card social-block ">
+        <div class="card-body">
+          <a class="btn btn-block btn-secondary" href="/auth/twitter" role="button">
+            <i class="fab fa-twitter"></i>
+            Sign Up with twitter
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with" data-layout="rounded"
+      data-auto-logout-link="false" data-use-continue-as="true"></div> -->
+
+  </div>
+</div>
+
+<%- include('partials/header') %>

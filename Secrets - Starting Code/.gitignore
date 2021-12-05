@@ -1,0 +1,4 @@
+.DS_Stror
+node_modules
+.env
+package-lock.json
